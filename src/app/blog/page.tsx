@@ -18,14 +18,14 @@ export async function generateMetadata(): Promise<Metadata> {
         title: ` Пошив и печать на одежде — статьи от PNHD>STUDIO для бизнеса и клиентов`,
         description: `PNHD>STUDIO — это блог о создании мерча. Отвечаем на важные вопросы о пошиве одежды и нанесении принтов: как выбрать ткань, технологию печати, рассчитать бюджет. Помогаем заказчикам принимать взвешенные решения.`,
         keywords: ['Печать на текстиле', "Мерч"],
-        //   openGraph: {
-        //     images: `${apiBaseUrl}${currItem?.image_url}`,
-        //     type: 'website',
-        //     url: `https://studio.pnhd.ru/shop/${params.slug}?id=${searchParams.id}`,
-        //     description: currItem?.description,
-        //     siteName: 'PINHEAD STUDIO',
-        //     title: currItem?.name,
-        //   }
+        openGraph: {
+            type: 'website',
+            url: 'https://studio.pnhd.ru/blog',
+            title: 'Блог PNHD STUDIO — о печати на одежде и мерче',
+            description: 'PNHD>STUDIO — это блог о создании мерча. Отвечаем на важные вопросы о пошиве одежды и нанесении принтов.',
+            siteName: 'PNHD STUDIO',
+            images: '/opengraph-image.jpg',
+        }
     }
 }
 

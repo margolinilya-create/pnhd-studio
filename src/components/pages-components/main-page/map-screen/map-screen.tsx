@@ -24,7 +24,7 @@ const MapScreen: React.FC = () => {
                     <p className={styles.contacts_text}>Режим работы: ежедневно, 11:00–20:00</p>
                     <p className={styles.contacts_text}>Телефон: +7 (812) 904-61-56</p>
                     <p className={styles.contacts_text}>Email: STUDIO@PNHD.RU</p>
-                    <p className={styles.contacts_text}>Адрес: 197022, г. Санкт-Петербург, ул. Чалыгина, д. 1, ст. м. «Петроградская»</p>
+                    <p className={styles.contacts_text}>Адрес: 197022, г. Санкт-Петербург, ул. Чапыгина, д. 1, ст. м. «Петроградская»</p>
                     <p className={styles.contacts_text}>Как добраться?<br/>
                         Удобное расположение в центре города. Подробную схему проезда и парковки вы можете узнать у нашего менеджера.
                     </p>
@@ -32,6 +32,13 @@ const MapScreen: React.FC = () => {
                     <div className={styles.contacs_buttonsWrapper}>
                         <span className={styles.contacts_contactsButton}>+7 (812) 904 61 56</span>
                         <button type='button' className={styles.contacts_contactsButton}>studio@pnhd.ru</button>
+                        <Link
+                            href="https://yandex.ru/maps/2/saint-petersburg/?rtext=~59.972621,30.306432&rtt=auto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button type='button' className={styles.contacts_contactsButton}>построить маршрут</button>
+                        </Link>
                         <UtmLink pathname='/shop'>
                             <button type='button' className={styles.contacts_leadButton}>перейти в конструктор</button>
                         </UtmLink>

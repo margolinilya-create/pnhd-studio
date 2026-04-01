@@ -18,6 +18,7 @@ import {FAQPageJsonLD, LocalBusinessJsonLD, ServiceJsonLD, WebPageJsonLD} from "
 import CatalogLeadScreen from "@/components/pages-components/main-page/catalogLeadScreen/catalogLeadScreen";
 import SinceScreen from "@/components/pages-components/main-page/sinceScreen/sinceScreen";
 import FormScreen from "@/components/pages-components/main-page/formScreen/FormScreen";
+import PrintsCounter from "@/components/pages-components/main-page/prints-counter/prints-counter";
 
 export const metadata: Metadata = {
     title: 'Печать на одежде в Санкт-Петербурге на заказ от 1 штуки цена в Pinhead Studio',
@@ -45,6 +46,7 @@ const App: React.FC = () => {
             <StagesScreen />
             <PriceScreen />
             <SinceScreen />
+            <PrintsCounter />
             <FormScreen />
             <HowToScreen />
             <FeedbackScreen />

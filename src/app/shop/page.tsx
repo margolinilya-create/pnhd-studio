@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import {Metadata} from 'next';
 import ProductCardsBlock from '@/components/pages-components/shop-page/product-cards-block/product-cards-block';
 import {IProduct} from '../utils/types';
@@ -55,7 +55,7 @@ const ShopPage: React.FC = async () => {
 
 
   return (
-    <Suspense fallback={<div>Загрузка...</div>}>
+    <>
       <ProductFilterComp shopData={shopData}>
         {shopData && shopData.length > 0 && <ProductCardsBlock shopData={shopData}/>}
         <MarkupScript jsonLd={jsonLdCatalog} />
@@ -66,7 +66,7 @@ const ShopPage: React.FC = async () => {
       <div style={{ marginTop: '120px', width: '100%' }}>
       <FaqScreen />
       </div>
-    </Suspense>
+    </>
   )
 }
 

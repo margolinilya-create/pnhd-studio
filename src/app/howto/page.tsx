@@ -29,6 +29,7 @@ export const generateMetadata = (): Metadata => {
           title: 'Конструктор / инструкция',
           description: 'Написали подробную инструкцию о том как пользоваться конструктором на сайте like a pro',
           siteName: 'ПИНХЭД СТУДИЯ',
+          images: '/opengraph-image.jpg',
       }
   }
 }

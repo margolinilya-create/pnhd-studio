@@ -3,9 +3,7 @@ import styles from './feedback-screen.module.css';
 
 import Image from 'next/image';
 import rating_stars from '../../../../../public/rating_star.svg';
-import feedback_image from '../../../../../public/feedback_image.svg';
-
-import FeedbackBlock from './feedback-block';
+import ReviewsBlock from './reviews-block/reviews-block';
 
 
 const FeedbackScreen: React.FC = () => {
@@ -24,8 +22,7 @@ const FeedbackScreen: React.FC = () => {
                     когда говорят о топовых принтах и заботливом сервисе, говорят о нас
                 </h2>
             </div>
-            <FeedbackBlock />
-            <Image src={feedback_image} alt='логотип яндекса и гугла' className={styles.screen_image} />
+            <ReviewsBlock />
         </section>
     )
 }
